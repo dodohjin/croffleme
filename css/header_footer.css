@@ -1,0 +1,127 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 0;
+    margin : 0 10% 0 10%;
+    font-family: "Comfortaa", sans-serif;
+    color: #5358a2;
+    font-size: 1em;
+    
+}
+
+header{
+    box-sizing: border-box;
+    width:100%;
+    padding: 2% 2% 1% 2%;
+    margin: 0 0 20px 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eeeaea;
+    
+}
+#upper{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;   
+    margin-bottom: 1.5%; 
+}
+
+#logo{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 2%;
+    text-align: left;
+}
+
+.upper-right{
+    box-sizing: border-box;
+    width: 60%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#bulk {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2%;
+    align-self: flex-end;
+    font-size: 1rem;
+    margin-right: 1.1em;
+}
+
+#lower{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav{
+    box-sizing: border-box;
+    width: 60%;
+    padding: 1%;
+    text-align: right;
+    margin-top:1%;
+    
+    /* display : flex;
+    flex-direction: column-reverse */
+    
+}
+nav a{
+    font-size: 120%;   
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #5358a2;
+}
+nav a:hover{
+    color: #e9615f;
+    font-weight: bold;
+    text-decoration: underline 2px #e9615f;
+    
+}
+#hours {
+    box-sizing: border-box;
+    width: 40%;
+    padding: 2%;
+    text-align: left;
+    font-size: 1rem;
+}
+
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px    ;
+    font-size: small;
+    background-color: #eeeaea;
+    vertical-align:middle ;
+}
+.cart-button{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #cart{
+    position: relative;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin: 1.4em 1.2em 0 0;
+  }
+  
+  .cart-quantity{
+    color:#eeeaea;
+    background-color: #e9615f;
+    padding: .15em .2em;
+    margin: .7em 1em 4em 0;
+    position: absolute;
+    border: solid 2px #e9615f;
+    border-radius: 15px;
+    font-weight: bolder;
+  }

@@ -1,0 +1,38 @@
+.thankyou{
+    box-sizing: border-box;
+    width : 98%;
+    text-align: center;
+    padding-top : 3%;
+    
+}
+
+img {
+    width: 40%;
+
+}
+
+.thankyou a {
+    color: #5358a2;
+    background-color:#eeeaea;
+    width : 38%;
+    padding: 2% 15%;
+    margin: 1%;
+    margin-bottom: 3%;
+    border-radius:20px;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.thankyou a:hover {
+    background-color:#5358a2;
+    color: #eeeaea;
+}
+
+.empty{
+    width: 100%;
+    height: 50px;
+    border: none;
+
+}

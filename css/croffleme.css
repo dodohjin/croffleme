@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 0;
+    margin : 0 10% 0 10%;
+    font-family: "Comfortaa", sans-serif;
+    color: #5358a2;
+    font-size: 1em;
+    
+}
+
+#main{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#home-pic img{
+    
+    width: 95%;
+    
+    /* border: 10px solid black; */
+    
+    margin: 1%;
+    border-radius: 30px;
+    background-color: #eeeaea;
+    /* background-image : url("../img/home.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%; */
+}
+
+
+#main a {
+    color: #5358a2;
+    background-color:#eeeaea;
+    width : 38%;
+    padding: 2%;
+    margin: 1%;
+    margin-bottom: 3%;
+    border-radius:20px;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+#main a:hover {
+    background-color:#5358a2;
+    color: #eeeaea;
+}
+
+#map {
+    box-sizing: border-box;
+    width: 100%;
+    /* text-align: center;     */
+    display : flex;
+    flex-wrap: wrap;
+    
+}
+
+#map span{
+    font-size: 1.5rem;
+    color: #5358a2;
+    width: 30%;
+    margin: 2% 2% 2% 0;
+    margin-left:0;
+    /* border: 1px solid #5358a2; */
+    align-self: flex-start; 
+}
+
+
+#map-search {
+    width: 50%;
+    padding: 0.2%;
+    margin: 2% 2% 2% 0;
+}
+.map-pic{
+    text-align: center;
+}
+.map-pic img {
+    
+    margin: 1%;
+    width: 90%;
+    margin: 1%;
+    border-radius: 25px;
+    background-color: #eeeaea;
+    align-self: center;
+    /* border: 10px solid black; */
+    /* background-image : url("../img/map.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    place-self: center; */
+}
+.notice{
+    font-size: 1.3rem;
+    
+    
+}
+

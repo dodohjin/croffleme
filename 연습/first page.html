@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> practice</title>
+        </head>
+
+        <body>
+            <div class="here">First page</div>
+            <div class="there"> <a href="second page.html">Click Here!</a> </div>
+            <script> 
+            let cartItems = [{
+                croffle : 'mango',
+                quantity : 1
+            }, {
+                waffle: 'blueberry',
+                quantity : 1
+            },{
+            drink: 'dripped',
+            hotOrIced : 'iced',
+            quantity:2
+        }];
+
+        let lists = ['cat', 'dog', 'lion', 'wolf'];
+        let data="Hi Sujin";
+
+        let orderItems = `
+    <div class="product-row">
+        <img class="cart-image" src="../img/menu/bg1.jpg" alt="">
+            <input class="product-quantity" type="number" value="1">
+            <button class="remove-button">Remove </button>
+    </div>
+    `
+        sessionStorage.setItem("animals", orderItems);
+        console.log(orderItems);
+            </script>
+        </body>
+</html>

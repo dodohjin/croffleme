@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Croffle Me</title>
+        
+        <link rel="stylesheet" href="css/header_footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="css/location.css">
+        <!-- <link rel="stylesheet" href="css/main-right.css"> -->
+        <script src=""></script>
+        <script src=""></script>
+    </head>
+    <body>
+        <header>
+            <div id="upper">
+                <a  href="croffleme.html"><img id="logo" alt="logo" src="img/logo_only.png"></a>
+                <div class="upper-right">
+                    <div class="cart-button">
+                        <i id="cart" class="fas fa-shopping-cart"></i>
+                        <span class="cart-quantity">0</span>
+                    </div>
+                    <div id="bulk"> Bulk order <a href="Contact.html">Here</a></div>
+                </div>
+            </div>
+            <div id="lower">
+                <div id="hours"> Open: 10am - 7pm </div>     
+                <nav>
+                    <a href="location.html">Order</a>
+                    <a href="Menu.html">Menu</a>
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+    <div class=main>
+    <div class="main-left">
+        <div class="whichstep">
+            <div class="step-menu" href=""> Delivery Location</div>
+        </div>
+    
+        <div class="location"> 
+            <div class="empty"></div>
+            <div class="location-title" > Delivery Location</div>
+            <form action="https://www.google.com/maps/@34.1412842,-118.1214447,15.25z" >
+                <div class="search">
+                    <input class="location-search" type="text" name="query" value="Put your address here">
+                    <button type="submit" class="search-button"> Search </button>
+            </div>
+            </form> 
+        </div>
+        <div class="maphere">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.147368738746!2d-118.13156346361379!3d34.14297346948291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c4a7a922d9f5%3A0xa7e8d6088f0ed36d!2z642UIOyVhO2FjOuEpOybgA!5e0!3m2!1sko!2sus!4v1661722807670!5m2!1sko!2sus" width="100%" ></iframe>
+            
+        </div>
+        <div class="empty"></div>
+        <!-- 주소가 맞다면 "Yes, we can deliver to you" & the next button
+            주소가 틀리다면 "Sorry, you are not in Croffle zone" & the back button -->
+
+        <div class="stepforward">
+            <a href="croffleme.html"> Back</a>
+            <a href="menu.html"> Next</a>
+        </div>
+    </div>
+    <!-- <div class="main-right">
+        <div class="cart">My Cart</div>
+        <div class="order-list"> Order list</div>
+        <div class="subtotal"> Subtotal</div>
+        <div class="cart-confirm">
+            <div class="back">Back</div>
+            <div class="checkout">Checkout</div>
+        </div>
+    </div> -->
+    </div>
+        <footer>
+            <p> &copy; Copyright by Croffle Me</p>
+        </footer>
+    </body>
+</html>

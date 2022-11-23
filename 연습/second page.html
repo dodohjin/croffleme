@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> practice</title>
+        </head>
+
+        <body>
+            <div class="here">Second page</div>
+            <div id="copy"></div>
+            
+            <script> 
+            let greet = sessionStorage.getItem("animals");
+            console.log(greet);
+            document.getElementById("copy").innerHTML = greet;
+            </script>
+        </body>
+
+</html>

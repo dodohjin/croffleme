@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Croffle Me</title>
+        
+        <link rel="stylesheet" href="css/header_footer.css">
+        <link rel="stylesheet" href="css/purchase.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+        <!-- <link rel="stylesheet" href="css/main-right.css"> -->
+        
+    </head>
+    <body>
+        <header>
+            <div id="upper">
+                <a  href="croffleme.html"><img id="logo" alt="logo" src="img/logo_only.png"></a>
+                <div class="upper-right">
+                    <div class="cart-button">
+                        <i id="cart" class="fas fa-shopping-cart"></i>
+                        <span class="cart-quantity">0</span>
+                    </div>
+                    <div id="bulk"> Bulk order <a href="Contact.html">Here</a></div>
+                </div>
+            </div>
+            <div id="lower">
+                <div id="hours"> Open: 10am - 7pm </div>     
+                <nav>
+                    <a href="location.html">Order</a>
+                    <a href="Menu.html">Menu</a>
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+       
+
+        <div class=main>
+            <div class="main-left">
+
+                <div class="whichstep">
+                    <div class="step-menu">Purchase</div>
+                </div>
+
+                
+                <div class="all-menu">
+                    <div class="empty" id="croffle"></div>
+                    <div class="delivery information">Delivery Info<br>
+                    
+                        <input type="text" id="detailed-info-a" placeholder="Name"  required >
+                        <input type="text" id="detailed-info-a" placeholder="Phone Number"  required>
+                        <input type="text" id="detailed-info-a" placeholder="Avenue" required>
+                        <input type="text" id="detailed-info-b" placeholder="Unit" required>
+                        <input type="number" id="detailed-info-b" placeholder="Zipcode"   required>
+                    </div>
+                </div>
+
+                
+                <div class="all-menu">
+                    <div class="empty" id="croffle"></div>
+                    <div class="creditcard information ">Credit Card Info<br>
+                        <input type="number" id="detailed-info-c" placeholder="1234" required>-
+                        <input type="number" id="detailed-info-c" placeholder="1234" required>-
+                        <input type="number" id="detailed-info-c" placeholder="1234" required>-
+                        <input type="number" id="detailed-info-c" placeholder="1234" required><br>
+                        <input type="text" id="detailed-info-b" placeholder="(mm/yr)" required>
+                        <input type="number" id="detailed-info-b" placeholder="3 digit number" required>
+                    </div>
+                </div>
+
+                
+                <div class="all-menu">
+                    <div class="empty" id="croffle"></div>
+                    <div class="order information"> Order Info <br>
+                        <div id="your-order">
+                            <div id="copy-order" class="copy"></div>
+                        </div>
+                        <div id="your-price">
+                             <div id="copy-price" class="copy">
+                                <button name="ten"> 10%</button>
+                                <button name="fifteen"> 15%</button>
+                                <button name="eighteen"> 18%</button>
+                                <button name="twenty"> 20%</button>
+                            </div>
+                        <div id="total-total"></div>                        
+                     </div>
+                    </div>
+                </div>
+
+                <div class="stepforward">
+                    <a href="menu.html"> Back</a>
+                    <a id="confirm" href="thankyou.html"> Confirm</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p> &copy; Copyright by Croffle Me</p>
+        </footer>
+        <script src="js/purchase.js"></script>
+    </body>
+</html>

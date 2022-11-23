@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Croffle Me</title>
+
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/diy.css">
+    <link rel="stylesheet" href="css/addcart-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/main-right.css"> -->
+
+</head>
+
+<body>
+    <header>
+        <div id="upper">
+            <a href="croffleme.html"><img id="logo" alt="logo" src="img/logo_only.png"></a>
+            <div class="upper-right">
+                <div class="cart-button">
+                    <i id="cart" class="fas fa-shopping-cart"></i>
+                    <span class="cart-quantity">0</span>
+                </div>
+                <div id="bulk"> Bulk order <a href="Contact.html">Here</a></div>
+            </div>
+        </div>
+        <div id="lower">
+            <div id="hours"> Open: 10am - 7pm </div>
+            <nav>
+                <a href="Order.html">Order</a>
+                <a href="Menu.html">Menu</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cart -->
+    <div class="main-right">
+        <div class="cart-modal">
+            <div class="inside-cart"> </div>
+            <i id="close-button" class="fas fa-times"></i>
+            <div class="mycart"> Cart </div>
+            <div class="product-rows"> </div>
+
+            <div class="cart-total">
+                <div class="cart-quantity">0</div>
+                <div class="cart-price"> <br>
+                    =======================================<br>
+                    Subtotal </div>
+            </div>
+            <button class="checkout" onclick="createList()"> <a href="purchase.html"> Checkout </a></button>
+        </div>
+        <!-- <script>orderlist = document.getElementsByClassName('cart-quantity').innerHTML;
+                sessionStorage.setItem("OrderList", JSON.stringify(orderlist));</script> -->
+    </div>
+
+
+    <div class=main>
+        <div class="main-left">
+            <div class="whichstep">
+                <a class="step-menu" href="#dough"> Dough</a>
+                <a class="step-menu" href="#cream"> Cream</a>
+                <a class="step-menu" href="#topping"> Topping</a>
+            </div>
+
+
+            <div class="diy-menu">
+                <div class="empty" id="dough"></div>
+                <div class="diy-menu-croffle"> Choose your Dough</div>
+
+                <div class="menu-1 list">
+                    <div class="menu-box">
+                        <img class="picture" alt="plain" src="img/menu/plain.jpg" width="100%"">
+                        <button class=" product-price" name="dough" onclick="checkOnlyOne(this)">$ 2.0</button>
+                    </div>
+                    <p class="name" id="plain">Plain</p>
+                </div>
+
+                <div class="menu-2 list">
+                    <div class="menu-box">
+                        <img class="picture" alt="maplecinnamon" src="img/menu/maplecinnamon.jpg" width="100%">
+                        <button class="product-price" name="dough" onclick="checkOnlyOne(this)">$ 2.3</button>
+                    </div>
+                    <p class="name" id="maplecinnamon">Maple Cinnamon</p>
+
+                </div>
+
+                <div class="empty" id="cream"></div>
+                <div class="diy-menu-croffle"> Choose your Cream</div>
+
+                <div class="menu-3 list">
+                    <div class="menu-box">
+                        <img class="picture" alt="cream" src="img/menu/cream.jpg" width="100%"">
+                        <button class=" product-price">$ 3.3 </button>
+                    </div>
+                    <p class="name" id="cream">Fresh Cream</p>
+                </div>
+
+                <div class="menu-4 list">
+                    <div class="menu-box">
+                        <img class="picture" alt="custurd" src="img/menu/custurd cream.jpg" width="100%">
+                        <button class="product-price">$ 3.3</button>
+                    </div>
+                    <p class="name" id="custurd">Custurd Cream</p>
+                </div>
+
+                <div class="menu-5 list">
+                    <div class="menu-box">
+                        <img class="picture" alt="blacksesame" src="img/menu/blacksesame cream.jpg" width="100%">
+                        <button class="product-price">$ 3.3 </button>
+                    </div>
+                    <p class="name" id="blacksesame">Black Sesame Cream</p>
+                </div>
+
+                <div class="empty" id="topping"></div>
+                <div class="diy-menu-croffle"> Choose your Topping</div>
+
+                <div class="menu-6 list">
+                    <div class="menu-box">
+                        <img class="picture" alt="mango" src="img/menu/cream with mangos.jpg" width="100%">
+                        <button class="product-price">$ 2.5</button>
+                    </div>
+                    <p class="name" id="mango">Mango</p>
+                </div>
+
+                <div class="menu-7 list">
+                    <div class="menu-box">
+                        <img class="picture" alt="bluberry" src="img/menu/creamwithblueberry.jpg" width="100%">
+                        <button class="product-price">$ 2.5 </button>
+                    </div>
+                    <p class="name" id="blueberry">Blueberry</p>
+                </div>
+
+                <div class="menu-8 list">
+                    <div class="menu-box">
+                        <img class="picture" alt="chocochips" src="img/menu/eggwafflechocomaltesers.jpg" width="100%"">
+                    <button class=" product-price">$ 2.5 </button>
+                    </div>
+                    <p class="name" id="chocochips">Choco Chips</p>
+                </div>
+
+                <div class="empty"></div>
+
+                <div class="stepforward">
+                    <a href="menu.html" class="next"> More menu</a>
+                    <a href="purchase.html" id="checkout"> Checkout</a>
+                </div>
+                <div class="empty"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> &copy; Copyright by Sujin Suzi Kim</p>
+    </footer>
+    <script src="js/adddiy.js"></script>
+
+</body>
+
+</html>

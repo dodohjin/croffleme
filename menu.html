@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Croffle Me</title>
+        
+        <link rel="stylesheet" href="css/header_footer.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/addcart-2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <!-- <link rel="stylesheet" href="css/main-right.css"> -->
+        
+    </head>
+    <body>
+        <header>
+            <div id="upper">
+                <a  href="croffleme.html"><img id="logo" alt="logo" src="img/logo_only.png"></a>
+                <div class="upper-right">
+                    <div class="cart-button">
+                        <i id="cart" class="fas fa-shopping-cart"></i>
+                        <span class="cart-quantity">0</span>
+                    </div>
+                    <div id="bulk"> Bulk order <a href="Contact.html">Here</a></div>
+                </div>
+            </div>
+            <div id="lower">
+                <div id="hours"> Open: 10am - 7pm </div>     
+                <nav>
+                    <a href="lacation.html">Order</a>
+                    <a href="Menu.html">Menu</a>
+                    <a href="About.html">About</a>
+                    <a href="Contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Cart -->
+        <div class="main-right">
+            <div class="cart-modal">
+                <div class="inside-cart"> </div>
+                <i id="close-button" class="fas fa-times" ></i>
+                <div class="mycart"> Cart </div>
+                 <div class="product-rows">   </div>
+                 
+                <div class="cart-total">  
+                  <div class="cart-quantity">0</div>
+                  <div class="cart-price"> <br>
+                =======================================<br>
+            Subtotal </div>
+                </div>
+                <button id="cart-checkout" class="cart checkout"> <a href="purchase.html"> Checkout </a></button>
+            </div>
+            <!-- <script>orderlist = document.getElementsByClassName('cart-quantity').innerHTML;
+                sessionStorage.setItem("OrderList", JSON.stringify(orderlist));</script> -->
+        </div>
+        
+        
+    <div class=main>
+        <div class="main-left">
+        <div class="whichstep">
+            <a class="step-menu" href="#croffle"> Croffle</a>
+            <a class="step-menu" href="#eggwaffle"> Egg Waffle</a>
+            <a class="step-menu" href="#drink"> Drinks</a>
+        </div>
+    
+        <div class="all-menu"> 
+            <div class="empty" id="croffle"></div>
+            <div class="all-menu-croffle" > Croffle</div>
+            
+            <div class="menu-1 list">
+                    <div class="menu-text">
+                        <p class="name" id="diy">DIY</p>
+                        <p class="explain">1. choose your dough <br>2. Choose your cream <br>3. Choose your topping</p>
+                    </div>
+                    <img class="picture" alt="DIY" src="img/menu/plain.jpg">
+                    <button class="add" id="diy"><a href="diy.html">DIY</a></button>
+                        
+                    
+            </div>
+            <div class="menu-2 list">
+                    <div class="menu-text">
+                        <p class="name">Cream with Mango</p>
+                        <p class="explain">Fresh cream with mango </p>
+                        <p class="product-price"> $ 7.6</p>
+                    </div>
+                    <img class="picture" alt="Cream with Mango" src="img/menu/cream with mangos.jpg">
+                    <button class="add">ADD</button>
+                    
+            </div>
+            <div class="menu-3 list">
+                    <div class="menu-text">
+                        <p class="name">Cream with Blueberry</p>
+                        <p class="explain">Fresh cream with blueberry </p>
+                        <p class="product-price"> $ 7.6</p>
+                    </div>
+                    <img class="picture" alt="Cream with Blueberry" src="img/menu/creamwithblueberry.jpg">
+                    <button class="add">ADD</button>
+                    
+            </div>
+            <div class="menu-4 list">
+                    <div class="menu-text">
+                        <p class="name">Custurd Cream</p>
+                        <p class="explain">Custurd Cream</p>
+                        <p class="product-price"> $ 7.6</p>
+                    </div>
+                    <img class="picture" alt="DIY" src="img/menu/custurd cream.jpg">
+                    <button class="add">ADD</button>
+                    
+            </div>
+            <div class="menu-5 list">
+                    <div class="menu-text">
+                        <p class="name">Kaya jam with coconut</p>
+                        <p class="explain">Kaya jam with coconuto </p>
+                        <p class="product-price"> $ 7.6</p>
+                    </div>
+                    <img class="picture" alt="Cream with Mango" src="img/menu/kayajam with coconut.jpg">
+                    <button class="add">ADD</button>
+                    
+            </div>
+            <div class="menu-6 list">
+                    <div class="menu-text">
+                        <p class="name">Tiramisu</p>
+                        <p class="explain">Tiramisu </p>
+                        <p class="product-price"> $ 7.6</p>
+                    </div>
+                    <img class="picture" alt="Cream with Blueberry" src="img/menu/tiramisu.jpg">
+                    <button class="add">ADD</button>
+                    
+            </div>
+            <div class="empty" id="eggwaffle"></div>
+
+                    
+            <div class="all-menu-eggwaffle" > Egg Waffle</div>
+            <div class="menu-7 list">
+                <div class="menu-text">
+                    <p class="name">Cream Eggwaffle</p>
+                    <p class="explain">Cream with Eggwaffle</p>
+                    <p class="product-price"> $ 7.6</p>
+                </div>
+                <img class="picture" alt="Cream Eggwaffle" src="img/menu/eggwaffle.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="menu-8 list">
+                <div class="menu-text">
+                    <p class="name">Eggwaffle Nutella</p>
+                    <p class="explain">Fresh cream with nutella, and banana topping </p>
+                    <p class="product-price"> $ 7.6</p>
+                </div>
+                <img class="picture" alt="Eggwaffle Nutella" src="img/menu/eggwafflebanannutela.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="menu-9 list">
+                <div class="menu-text">
+                    <p class="name">Eggwaffle Maltesers</p>
+                    <p class="explain">Fresh cream with choco syrup, and maltesers </p>
+                    <p class="product-price"> $ 7.6</p>
+                </div>
+                <img class="picture" alt="Eggwaffle Maltesers" src="img/menu/eggwafflechocomaltesers.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="menu-10 list">
+                <div class="menu-text">
+                    <p class="name">Eggwaffle Dou-Blueberry</p>
+                    <p class="explain">Fresh cream with bluberry syrup, and blueberry topping</p>
+                    <p class="product-price"> $ 7.6</p>
+                </div>
+                <img class="picture" alt="Eggwaffle Dou-BlueberryDIY" src="img/menu/eggwaffledoublueberry.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="menu-11 list">
+                <div class="menu-text">
+                    <p class="name">Eggwaffle Maple</p>
+                    <p class="explain">Fresh cream with maple syrup </p>
+                    <p class="product-price"> $ 7.6</p>
+                </div>
+                <img class="picture" alt="Eggwaffle Maple" src="img/menu/eggwafflemaple.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="menu-12 list">
+                <div class="menu-text">
+                    <p class="name">Eggwaffle oreo</p>
+                    <p class="explain">Fresh cream with OREOs </p>
+                    <p class="product-price"> $ 7.6</p>
+                </div>
+                <img class="picture" alt="Eggwaffle oreo" src="img/menu/eggwaffleoreo.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="empty" id="drink"></div>
+
+
+            <div class="all-menu-drink" > Drinks</div>
+            <div class="menu-13 list">
+                <div class="menu-text">
+                    <p class="name">Dripped Coffee</p>
+                    <p class="explain">It's HOT!</p>
+                    <p class="product-price"> $ 2.8</p>
+                </div>
+                <img class="picture" alt="Dripped Coffee" src="img/menu/hotblackcoffee.jpg">
+                <button class="add">ADD</button>
+                
+             </div>
+            <div class="menu-14 list">
+                <div class="menu-text">
+                    <p class="name">Cold Brew</p>
+                    <p class="explain">It's COLD! </p>
+                    <p class="product-price"> $ 3.2</p>
+                </div>
+                <img class="picture" alt="Cold Brew" src="img/menu/icedcoffee.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="menu-15 list">
+                <div class="menu-text">
+                    <p class="name">Cafe Latte</p>
+                    <p class="explain">Choose Hot/Iced </p>
+                    <p class="product-price"> $ 3.8</p>
+                </div>
+                <img class="picture" alt="Cafe Latte" src="img/menu/hotlatte.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="menu-16 list">
+                <div class="menu-text">
+                    <p class="name">Tea</p>
+                    <p class="explain">It's Oorong tea from Taiwan. <br>Choose Hot/Iced </p>
+                    <p class="product-price"> $ 3.5</p>
+                </div>
+                <img class="picture" alt="Tea" src="img/menu/hottea.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="menu-17 list">
+                <div class="menu-text">
+                    <p class="name">Tea Latte</p>
+                    <p class="explain">It's Oorong tea from Taiwan. <br> Choose Hot/Iced </p>
+                    <p class="product-price"> $ 4.2</p>
+                </div>
+                <img class="picture" alt="Tea Latte" src="img/menu/icedlatte.jpg">
+                <button class="add">ADD</button>
+               
+            </div>
+            <div class="menu-18 list">
+                <div class="menu-text">
+                    <p class="name">Black Sesame Latte</p>
+                    <p class="explain">It's from Korean. Try this! </p>
+                    <p class="product-price"> $ 4.8</p>
+                </div>
+                <img class="picture" alt="Black Sesame Latte" src="img/menu/blacksesamelatte.jpg">
+                <button class="add">ADD</button>
+                
+            </div>
+            <div class="empty"></div>
+            <div class="stepforward">
+                <a href="location.html"> Back</a>
+                <a id="checkout" class="checkout" href="purchase.html"> Checkout</a>
+            </div>        
+            <div class="empty"></div>
+        </div>
+    </div>
+</div>
+
+
+        <footer>
+            <p> &copy; Copyright by Sujin Suzi Kim</p>
+        </footer>
+        <script src="js/addmenu-2.js"></script>
+    </body>
+</html>
