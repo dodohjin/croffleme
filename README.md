@@ -1,8 +1,8 @@
 # croffleme
 
-It is a website of virtual dessert cafe that mainly sells croffles and drinks. 
+It is a website of a virtual dessert cafe that mainly sells croffles and drinks. 
 
-Try to embody the whole order process by vanila javascript. 
+Try to embody the whole order process with vanilla javascript. 
 
 References
  - Code source: https://codepen.io/elieb77/pen/rNMMEdo
