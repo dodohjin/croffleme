@@ -26,6 +26,8 @@
     margin-left: 8%;
 }
 
+/* Location */
+
 .location{
     width: 95%;
     display: flex;
@@ -90,6 +92,90 @@
 }
 
 
+/* Menu */
+
+.step-menu:hover{
+    color: #e9615f;
+    font-weight: bold;
+} 
+
+.all-menu{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.all-menu-croffle, .all-menu-eggwaffle, .all-menu-drink{
+    width:98%;
+    padding: 0.5%;
+    margin: 0.5%;
+    color:#5358a2;
+    font-size: 1.5em;
+    font-weight: bold;
+    align-self: left;
+    margin-left: 5px;
+
+}
+
+.list{
+    box-sizing: border-box;
+    width: 45%;
+    
+    margin: 10px;
+    border: 1px solid #5358a2;
+    border-radius: 15px;
+    /* border-left:none;
+    border-right:none; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.menu-text{
+    box-sizing: border-box;
+    width: 60%;
+    padding : 5px 0 0 10px;
+    font-size: 0.95rem;
+}
+
+.picture{
+    width: 35% !important;
+    /* height: auto; */
+    object-fit: cover;
+    margin-left: 10px;
+    /* border: 1px solid #5358a2; */
+
+}
+
+.name{
+    font-weight :bold;
+}
+
+.list:hover .add{
+    transform: translateX(0);
+}
+
+.add{
+    width: 40px;
+    padding: 2.5px;
+    font-size: 101%;
+    /* right:0; */
+    background-color:#e9615f;
+    color:#eeeaea;
+    position: absolute;
+    transform: translateX(50px);
+    top: 82%;
+    right: 0;
+    transition : 0.5s ease; 
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /* align-self: right; */
+}
+
+/* buttons */
+
 .stepforward{
     width: 100%;
     margin-top: 1rem;
@@ -116,10 +202,10 @@
     background-color:#5358a2;
 }
 
-.back a, .next a{
-    text-decoration: none;
-    color: #5358a2;
+#checkout:hover, #confirm:hover{
+    background-color: #e9615f;
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -136,6 +222,11 @@
         border:none;
     }
 
+    
+    .list{
+        width: 90%;
+    }
+
     .stepforward {
         width: 75vw;
         margin-top: 1rem;
@@ -145,8 +236,8 @@
 
     .stepforward a{
         width: 100%;
-        font-size: 1.15rem;
     }
 
 
 }
+

@@ -2,25 +2,22 @@
 const cart=document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.main-right');
 
-cart.addEventListener('click', () => {
-    if(cartModalOverlay.style.transform ='translateX(97.5%) translateY(-400%)'){
-        cartModalOverlay.style.transform='translateX(97.5%) translateY(-90%)';
-    } 
-    else{
-        cartModalOverlay.style.transform='translateX(97.5%) translateY(-400%)';
-    }
-})
+const menuOpen = () => {
+    cartModalOverlay.classList.toggle('show');
+}
+
+cart.addEventListener('click',menuOpen);
 
 // end of open cart modal
 
 // close cart modal
 const closeBtn = document.querySelector('#close-button');
 closeBtn.addEventListener('click', ()=>{
-    cartModalOverlay.style.transform='translateX(97.5%) translateY(-400%)';
+    cartModalOverlay.classList.toggle('show');
 });
 cartModalOverlay.addEventListener('click', (e)=>{
     if(e.target.classList.contains('main-right')){
-       cartModalOverlay.style.transform = 'translateX(97.5%) translateY(-400%)' 
+        cartModalOverlay.classList.toggle('show');
     }
 })
 // end of close cart modal
@@ -38,7 +35,6 @@ function addToCartClicked (event) {
     button = event.target;
     var cartItem = button.parentElement;
     var price = cartItem.getElementsByClassName('product-price')[0].innerText;
-
     var imageSrc = cartItem.getElementsByClassName('picture')[0].src;
     addItemToCart(price, imageSrc);
     updateCartPrice()
@@ -79,7 +75,6 @@ function addItemToCart(price, imageSrc) {
 // set orderlist
 
     var orderRows=document.querySelector('.product-rows').innerHTML;
-    console.log(orderRows);    
     sessionStorage.setItem('orderlist', orderRows);
 }
 // end of add products to cart
@@ -101,8 +96,7 @@ function removeItem(event){
 // end of remove products from cart
 
 // Update quantity input
-var quantityInput=document.getElementsByClassName('product-quantity')[0];
-
+var quantityInput=document.getElementsByClassName('product-quantity');
 for(var i=0; i<quantityInput; i++){
     input=quantityInput[i]
     input.addEventListener('change', changeQuantity)
@@ -120,18 +114,19 @@ function changeQuantity(event){
 
 // update total price
 function updateCartPrice(){
-    var total=0
+    var total=0;
     for( var i=0; i<productRow.length; i+=2){
         cartRow=productRow[i]
         var priceElement = cartRow.getElementsByClassName('cart-price')[0]
         var quantityElement= cartRow.getElementsByClassName('product-quantity')[0]
-        var price=parseFloat(priceElement.innerText.replace('$',''))
+        var priceNum=Number(priceElement.innerText.replace('$',''))
+        
         var quantity=quantityElement.value
-        total=total+ (price*quantity)
-        Number(total);
+        total=total+ (priceNum*quantity)
+        
     }
     document.getElementsByClassName('cart-total')[0].innerText = 
-    '      Subtotal :  $ '+total
+    '      Subtotal :  $ '+total.toFixed(1)
     document.getElementsByClassName('cart-quantity')[0].textContent = i/=2
 
     // set price 
@@ -145,7 +140,7 @@ sessionStorage.setItem('total-price', total);
 // checkout items
 const checkOut=document.querySelectorAll('.checkout');
 const closeCartModal=document.querySelector('.cart-modal');
-checkOut.addEventListener('click', checkOutClicked)
+
 function checkOutClicked(){
     alert('Thank you for your purchase');
     cartModalOverlay.style.transform='translateX(97.5%) translateY(-300%)'
@@ -155,6 +150,7 @@ function checkOutClicked(){
     }
     updateCartPrice()
 }
+checkOut.addEventListener('click', checkOutClicked)
 
     
 

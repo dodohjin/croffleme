@@ -1,41 +1,9 @@
-.main{
-    box-sizing: border-box;
-    width: 100;
-    display: flex;
-   
-}
 
 
-.main-left{
-    box-sizing: border-box;
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.whichstep{
-    box-sizing: border-box;
-    width : 98%;
-    padding: 1%;
-    margin: 1%;
-    border-bottom: 1.7px solid #5358a2;
-    border-top: 1.5px solid #5358a2;
-    /* text-align: center; */
-    position: sticky;
-    z-index: 1;
-    top:10px;
-    background-color:#ffffff;
-}
-.step-menu {
-    text-decoration: none;
-    color: #5358a2;
-    margin: 0 100px 0 30px;
-}
 .step-menu:hover{
     color: #e9615f;
     font-weight: bold;
-}
+} 
 
 .all-menu{
     box-sizing: border-box;
@@ -129,66 +97,16 @@
     /* align-self: right; */
 }
 
-.stepforward{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.back, .next{
-    width: 40%;
-    font-size:1.5rem;
-    padding: 1%;
-    margin:1%;
-    /* border : 1px solid #5358a2; */
-    border-radius: 20px;
-    background-color: #eeeaea;
+@media screen and (max-width: 500px) {
+
+    .all-menu{
+        box-sizing: border-box;
+        width: 95%;
+        display: block;
+        justify-content: center;
+    }
     
-
+    .list{
+        width: 90%;
+    }
 }
-
-.back:hover, .next:hover{
-    background-color: #e9615f;
-    color:#eeeaea;
-    font-weight: bold;
-    border:1px solid #e9615f;
-}
-
-
-.stepforward{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.stepforward a{
-    color: #5358a2;
-    background-color:#eeeaea;
-    width : 38%;
-    padding: 2%;
-    margin: 1%;
-    margin-bottom: 3%;
-    border-radius:20px;
-    font-size:1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    
-
-}
-
-.stepforward a:hover{
-    color: #eeeaea;  
-    background-color:#5358a2;
-}
-
-.stepforward #checkout:hover{
-    background-color: #e9615f;
-}
-
-/* .back a, .next a{
-    text-decoration: none;
-    color: #5358a2;
-} */
