@@ -3,6 +3,8 @@
 It is a website of a virtual dessert cafe that mainly sells croffles and drinks. 
 
 Try to embody the whole order process with vanilla javascript. 
+https://dodohjin.github.io/croffleme/
+
 
 References
  - Code source: https://codepen.io/elieb77/pen/rNMMEdo
