@@ -4,7 +4,7 @@ It is a website of a virtual dessert cafe that mainly sells croffles and drinks.
 
 Try to embody the whole order process with vanilla javascript. 
 
-READ ME: https://dodohjin.github.io/croffleme/
+gh-page: https://dodohjin.github.io/croffleme/
 
 
 References
